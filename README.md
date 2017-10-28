@@ -12,11 +12,11 @@ SSH port: 2200
 # Task Summary
 
 * Configured the firewall and ssh
-  * Allow ssh from port 2200 through ufw and Lightsale
-  * Opened ports 80 (http) and 123 (ntp) in ufw
+  * Allow ssh from port 2200 through ufw and Lightsale (`sudo ufw allow tcp/2200`)
+  * Opened ports 80 (http) and 123 (ntp) in ufw (`sudo ufw allow http && sudo ufw allow ntp`)
   * Changed the ssh config to use port 2200
-  * Enabled ufw
-  * Removed access to ssh on port 22
+  * `sudo ufw enable`
+  * Removed access to ssh on port 22 (`sudo ufw deny ssh`)
 * Gave `grader` access
   * `sudo adduser grader` and filled out some information
   * `sudo usermod -aG sudo grader` to add grader into the sudo group
