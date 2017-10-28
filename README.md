@@ -39,7 +39,7 @@ SSH port: 2200
 * I neeeded to make changes to file references in my Item Catalog application (needed full paths instead of relative ones)
 * I needed to reconfigure the Item Catalog production settings
   * Mostely PosgreSQL stuff (http://docs.sqlalchemy.org/en/latest/core/engines.html)
-* Used http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/#troubleshooting to help get the `.wsgi` script setup
+* Used http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/ to help get the `.wsgi` script setup
 * Constantly referred to the PosgreSQL docs to get it setup (https://www.postgresql.org/docs/9.5/static/)
 * Some errors did not show up in the apache error log so I used http://flask.pocoo.org/docs/0.12/errorhandling/ to setup a log file.
   * I also had to `chmod 666 error.log` so that I could log flask errors (probably not perfect, but got it working)
