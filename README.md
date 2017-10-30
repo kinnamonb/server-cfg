@@ -26,6 +26,9 @@ SSH port: 2200
     * `nano ~/.ssh/authorized_keys` and copy and pasted the grader public key
     * Setup PuTTY to use the grader account/key to test ssh and sudo
 * `cat /etc/timezone` to find the timezone was set to Etc/UTC
+* `sudo apt-get update && sudo apt-get upgrade` to make sure I have the latest updates
+  * Needed to restart and forgot... so I did... eventually
+  * Don't want to enable automatic upgrades to avoid version conflicts
 * `sudo apt-get ...` (I think this step would have been a little easier if I had used a python venv)
   * `apache2`
   * `libapache2-mod-wsgi`
